@@ -2,7 +2,7 @@ D:\wwwroot\dnndev_v9.me\bin\kk_aj_startView.dll.config
 D:\wwwroot\dnndev_v9.me\bin\kk_aj_startView.dll
 D:\wwwroot\dnndev_v9.me\bin\kk_aj_startView.pdb
 D:\wwwroot\dnndev_v9.me\bin\kk_aj_startView.xml
-D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_startView\obj\Release\kk_aj_startView.vbprojResolveAssemblyReference.cache
 D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_startView\obj\Release\kk_aj_startView.dll
 D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_startView\obj\Release\kk_aj_startView.xml
 D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_startView\obj\Release\kk_aj_startView.pdb
+D:\wwwroot\dnndev_v9.me\DesktopModules\kk_aj_startView\obj\Release\kk_aj_startView.vbprojResolveAssemblyReference.cache

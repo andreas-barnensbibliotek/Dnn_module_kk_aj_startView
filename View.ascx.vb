@@ -12,6 +12,8 @@ Imports DotNetNuke.Entities.Modules.Actions
 Imports DotNetNuke.Entities.Modules
 Imports DotNetNuke.Services.Exceptions
 Imports DotNetNuke.Services.Localization
+Imports DotNetNuke.Entities.Users
+Imports kk_aj_adminConfig
 
 ''' <summary>
 ''' The View class displays the content
@@ -39,12 +41,18 @@ Public Class View
     ''' -----------------------------------------------------------------------------
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         Try
+            Dim conf As New viewstartupconfig
+            Dim nowUser As UserInfo = DotNetNuke.Entities.Users.UserController.Instance.GetCurrentUserInfo()
+            kk_aj_roll.InnerHtml = conf.setUserRoll(nowUser)
+
+            kk_aj_page.InnerHtml = conf.getcurrentPageView(ModuleId)
 
         Catch exc As Exception
             Exceptions.ProcessModuleLoadException(Me, exc)
         End Try
 
     End Sub
+
 
     ''' -----------------------------------------------------------------------------
     ''' <summary>
@@ -63,5 +71,6 @@ Public Class View
             Return Actions
         End Get
     End Property
+
 
 End Class

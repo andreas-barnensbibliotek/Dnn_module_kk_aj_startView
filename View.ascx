@@ -14,21 +14,14 @@
         <div class="col-md-3">
             <!-- Profile Image -->
             <div class="box box-primary">
-                <div class="box-body box-profile">
-                    <img class="profile-user-img img-responsive img-circle" src="/Portals/_default/Skins/kk_Admin_Acklay/img/alf-aj.jpg" alt="User profile picture">
-                    <h3 class="profile-username text-center">Andreas Josefsson</h3>
-                    <p class="text-muted text-center">Systemutvecklare</p>
-                    <ul class="list-group list-group-unbordered">
-                        <li class="list-group-item"><b>E-post:</b> <a class="pull-right">andreas.josefsson@kulturivast.se</a> </li>
-                        <li class="list-group-item"><b>Tel:</b> <a class="pull-right">0708-183215</a> </li>
-                        <li class="list-group-item"><b>Roll:</b> <a class="pull-right">Admin</a> </li>
-                    </ul>
+                <div class="box-body box-profile kk_aj_profile">
+                    
                 </div>
                 <!-- /.box-body -->
             </div>
             <!-- /.box -->
             <!-- About Me Box -->
-            <div class="box box-primary">
+            <div class="box box-primary kk_aj_AboutMe">
                 <div class="box-header with-border">
                     <h3 class="box-title">Om mej</h3>
                 </div>
@@ -134,3 +127,7 @@
     <!-- /.row -->
 </section>
 <!-- /.content -->
+<div id="kk_aj_conf" style="">
+    <span id="kk_aj_roll" runat="server"></span>
+    <span id="kk_aj_page" runat="server"></span>
+</div>
