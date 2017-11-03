@@ -41,8 +41,17 @@ Public Class View
     ''' -----------------------------------------------------------------------------
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         Try
+            Dim userroller As String = ""
+            Dim rc As New DotNetNuke.Security.Roles.RoleController()
+
             Dim conf As New viewstartupconfig
             Dim nowUser As UserInfo = DotNetNuke.Entities.Users.UserController.Instance.GetCurrentUserInfo()
+
+            For Each usrroll In nowUser.Roles
+                Dim role As Security.Roles.RoleInfo = rc.GetRoleByName(PortalId, usrroll)
+                userroller = userroller & role.RoleID.ToString & ", "
+            Next
+
             kk_aj_CurrentRollid.InnerHtml = conf.setUserRoll(nowUser)
             kk_aj_CurrentPageType.InnerHtml = conf.getcurrentPageView(ModuleId)
 
