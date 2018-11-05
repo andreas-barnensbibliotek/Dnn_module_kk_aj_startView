@@ -19,7 +19,7 @@
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#activity" data-toggle="tab">Senaste händelserna</a></li>
-                    <li class=""><a href="#searchlist" data-toggle="tab">Sök</a></li>     
+                    <li style="display:none;" class=""><a href="#searchlist" data-toggle="tab">Sök</a></li>     
                 </ul>
                 <div class="tab-content">
                     <div class="active tab-pane kk_aj_startsenastelist" id="activity">
